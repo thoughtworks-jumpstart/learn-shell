@@ -70,21 +70,23 @@ Pipe (`|`) allows us to pipe the output of one command --> as the input to anoth
   - `man wc`
 
 ### About PATH
-- We can check our the environment variables available to our terminal using
+- The shell path for a user in macOS or OSX is a set of locations in the filing system whereby the user has permissions to use certain applications, commands and programs without the need to specify the full path to that command or program in the Terminal
+- Your shell path is a bunch of absolute paths of the filing system separated by colons :
+- We can check what's in your path using this command
   - `echo $PATH`
 
-- Temporarily add folder scripts to your path to make it the scripts available to our terminal
+- Temporarily add folder `scripts` to your path to make it available to the terminal
   - `export PATH=$PATH:<absolute_path_to_folder>`
   - Example would be `export PATH=$PATH:/Users/sgyaminmhd/jumpstart/learn-shell/scripts`
   - `echo $PATH` to check that it's added to the end of the $PATH
   - Return to your home directory using `~` and run `hello_world.sh`
-  - It will run the script!
-  - Close your terminal and the `echo $PATH` and notice your $PATH is back to normal
+  - It will run the executable script!
+  - Close your terminal session and run `echo $PATH` to notice that your $PATH is back to normal
 
-- You can permanently add the directory to your PATH by adding it in your `.zshrc` file
+- Permanently add the directory to your PATH by adding it in your `.zshrc` file
   - `export PATH=$PATH:<absolute_path_to_folder>` at the top of the file
   - save your file
   - Open a new terminal session (important). Close any old session and open a new one for the new PATH to take effect
   - Return to your home directory using `~` and run `hello_world.sh`
   - It will run the script!
-  - Close your terminal and the `echo $PATH` and notice your $PATH is persisted to the new PATH
+  - Close your terminal and run `echo $PATH` to notice the new addition is persisted to the PATH
