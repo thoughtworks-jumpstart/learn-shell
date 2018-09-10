@@ -49,7 +49,7 @@ In this session, we will get familiar with shell commands with pop and rock musi
 - Deleting directories:
   - `rm -rf jazz`
 
-### See history 
+### See history
 - `history`
 
 ### Pipe
@@ -60,12 +60,31 @@ Pipe (`|`) allows us to pipe the output of one command --> as the input to anoth
 
 - Example use case #2: `wc` (count)
   - count number of lines in a file
-    - `cat ./pop/adele/hello.txt | wc -l` 
-    - `cat ./pop/adele/someone-like-you.txt | wc -l` 
+    - `cat ./pop/adele/hello.txt | wc -l`
+    - `cat ./pop/adele/someone-like-you.txt | wc -l`
 
 ### When in doubt, `man` up!
 - Examples:
   - `man mkdir`
   - `man ls`
   - `man wc`
-  
+
+### About PATH
+- We can check our the environment variables available to our terminal using
+  - `echo $PATH`
+
+- Temporarily add folder scripts to your path to make it the scripts available to our terminal
+  - `export PATH=$PATH:<absolute_path_to_folder>`
+  - Example would be `export PATH=$PATH:/Users/sgyaminmhd/jumpstart/learn-shell/scripts`
+  - `echo $PATH` to check that it's added to the end of the $PATH
+  - Return to your home directory using `~` and run `hello_world.sh`
+  - It will run the script!
+  - Close your terminal and the `echo $PATH` and notice your $PATH is back to normal
+
+- You can permanently add the directory to your PATH by adding it in your `.zshrc` file
+  - `export PATH=$PATH:<absolute_path_to_folder>` at the top of the file
+  - save your file
+  - Open a new terminal session (important). Close any old session and open a new one for the new PATH to take effect
+  - Return to your home directory using `~` and run `hello_world.sh`
+  - It will run the script!
+  - Close your terminal and the `echo $PATH` and notice your $PATH is persisted to the new PATH
