@@ -2,14 +2,14 @@
 
 In this session, we will get familiar with shell commands with pop and rock music!
 
-### Getting started
+## Getting started
 - Clone this repo `git clone https://github.com/thoughtworks-jumpstart/learn-shell.git`
 - get into the project directory (cd): `cd learn-shell`
 - Complete the tasks below sequentially
 
-### Tasks
+## Tasks
 
-#### Navigation
+### Navigation
 - Find out the absolute path to where you currently are: `pwd`
 - List the contents of your current directory `ls`
 - List the contents of your current directory with some options: `ls -l` and `ls -la`
@@ -18,13 +18,13 @@ In this session, we will get familiar with shell commands with pop and rock musi
 - Navigate into the `adele` directory: `cd pop/adele`
 - Navigate back: `cd ../..`
 
-#### Reading files
+### Reading files
 - Print the lyrics to adele's "hello.txt": `cat ./pop/adele/hello.txt` or `cat pop/adele/hello.txt` (the . is optional)
 - Print the lyrics to adele's "someone-like-you.txt": `cat pop/adele/someone-like-you.txt`
 - Replace `cat` with `less` (press `q` when you want to exit)
 
 
-#### Moving/renaming files/directories
+### Moving/renaming files/directories
 - Move `set-fire-to-the-rain.txt` to the right folder (`pop/adele`): `mv my_source_filepath my_target_filepath`
   - you can move: `mv ./set-fire-to-the-rain.txt ./pop/adele/`
   - you can move and rename simultaneously: `mv ./set-fire-to-the-rain.txt ./pop/adele/SET-FIRE-TO-THE-RAIN.txt`
@@ -32,7 +32,7 @@ In this session, we will get familiar with shell commands with pop and rock musi
   - `mv ./pop/adele/SET-FIRE-TO-THE-RAIN.txt ./pop/adele/set-fire-to-the-rain.txt`
   - `mv pop old-pop`
 
-#### Creating files and directories
+### Creating files and directories
 - Creating files:
   - `touch somefile`
   - `touch otherfile.txt`
@@ -41,7 +41,7 @@ In this session, we will get familiar with shell commands with pop and rock musi
 - Creating directories:
   - `mkdir jazz`
 
-#### Deleting files and directories
+### Deleting files and directories
 - Deleting files:
   - `rm somefile`
   - `rm otherfile.txt anotherfile.js`
