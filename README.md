@@ -58,6 +58,14 @@ Pipe (`|`) allows us to pipe the output of one command as the input to another c
 ### RTFM - Read the friendly manual
 - Read manuals with the `man` command. E.g. `man mkdir`, `man ls`
 
+### Navigate `man` pages
+- `man` uses `less` as its default pager
+- `h` to get help (this is the only one you have to remember)
+- `q` to quit
+- `f` to move forward (you can also use the `SPACE` key)
+- `b` to move backward
+- `/pattern` to search for something; use `n` for next search occurence and `p` to go back to the first occurence
+
 ### `PATH`
 PATH is an environment variable on Unix-like operating systems, DOS, OS/2, and Microsoft Windows, specifying a set of directories where executable programs are located. In general, each executing process or user session has its own PATH setting. 
 
