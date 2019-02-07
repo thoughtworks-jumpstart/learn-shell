@@ -3,7 +3,7 @@
 In this session, we will get familiar with shell commands with pop and rock music!
 
 ### Getting started
-- Fork and clone repo
+- Clone this repo `git clone https://github.com/thoughtworks-jumpstart/learn-shell.git`
 - get into the project directory (cd): `cd learn-shell`
 - Complete the tasks below sequentially
 
