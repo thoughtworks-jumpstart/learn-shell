@@ -69,11 +69,15 @@ Pipe (`|`) allows us to pipe the output of one command --> as the input to anoth
   - `man ls`
   - `man wc`
 
-### About PATH
-- The shell path for a user in macOS or OSX is a set of locations in the filing system whereby the user has permissions to use certain applications, commands and programs without the need to specify the full path to that command or program in the Terminal
-- Your shell path is a bunch of absolute paths of the filing system separated by colons :
-- We can check what's in your path using this command
-  - `echo $PATH`
+### `PATH`
+
+PATH is an environment variable on Unix-like operating systems, DOS, OS/2, and Microsoft Windows, specifying a set of directories where executable programs are located. In general, each executing process or user session has its own PATH setting. 
+
+We can check what's in your `PATH` with `echo $PATH`
+
+If you have scripts you want to run, you would have to `cd` into your directory and then run `./my-script.sh`.
+
+Alternatively, you can add a directory to your `PATH` which will allow you to execute `my-script.sh`. Let's see how to do this.
 
 - Temporarily add folder `scripts` to your path to make it available to the terminal
   - `export PATH=$PATH:<absolute_path_to_folder>`
