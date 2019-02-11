@@ -5,5 +5,5 @@
 echo "Hello, world!"
 
 # You cannot execute this file because you don't have permission to do so
-# Change permissions with `chmod +x hello.sh` and verify with `ls -l`
+# Change permissions with `chmod u+x hello.sh` and verify with `ls -l`
 # Now try and execute this file again
